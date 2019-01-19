@@ -1,0 +1,191 @@
+The message sent in should be an https Get to https://systmoneukdemo1.tpp-uk.com/SystmOneMHS/NHSConnect/Z12345/STU3/1/Patient/9222500000000000/Appointment?start=ge2019-01-18&start=le2019-01-24
+
+The id after /Patient/ is the patient ID as obtained from the structured patient retrieve (the $gpc.getstructuredrecord API call).
+the two 'start' date filters are to make it return appointments which start between those two dates.
+
+---------
+Headers:
+---------
+authorization: Bearer eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJpc3MiOiJodHRwczovL3d3dy50cHAtdWsuY29tIiwic3ViIjoiMTcyODEwMDAwMDAwMDAwMCIsImF1ZCI6Imh0dHBzOi8vYXV0aG9yaXplLmZoaXIubmhzLm5ldC90b2tlbiIsImV4cCI6MTkwMDAwMDMwMCwiaWF0IjoxOTAwMDAwMDAwLCJyZWFzb25fZm9yX3JlcXVlc3QiOiJkaXJlY3RjYXJlIiwicmVxdWVzdGVkX3Njb3BlIjoib3JnYW5pemF0aW9uLyoucmVhZCIsInJlcXVlc3RpbmdfZGV2aWNlIjp7InJlc291cmNlVHlwZSI6IkRldmljZSIsImlkIjoiMSIsIm1ldGEiOnsicHJvZmlsZSI6WyJodHRwOi8vZmhpci5uaHMubmV0L1N0cnVjdHVyZURlZmluaXRpb24vZ3Bjb25uZWN0LWRldmljZS0xIl0sInZlcnNpb25JZCI6IjEifSwiaWRlbnRpZmllciI6W3sic3lzdGVtIjoiVFBQIiwidmFsdWUiOiJUUFAifV0sInR5cGUiOnsiY29kaW5nIjpbeyJzeXN0ZW0iOiJodHRwOi8vc25vbWVkLmluZm8vc2N0IiwiY29kZSI6IjQ2MjI0MDAwMCIsImRpc3BsYXkiOiJQYXRpZW50IGhlYWx0aCByZWNvcmQgaW5mb3JtYXRpb24gc3lzdGVtIChwaHlzaWNhbCBvYmplY3QpIn1dfX0sInJlcXVlc3Rpbmdfb3JnYW5pemF0aW9uIjp7InJlc291cmNlVHlwZSI6Ik9yZ2FuaXphdGlvbiIsImlkIjoiMzRkMDAwMDAwMDAwMDAwMCIsIm1ldGEiOnsicHJvZmlsZSI6WyJodHRwczovL2ZoaXIubmhzLnVrL1NUVTMvU3RydWN0dXJlRGVmaW5pdGlvbi9DYXJlQ29ubmVjdC1HUEMtT3JnYW5pemF0aW9uLTEiXX0sImlkZW50aWZpZXIiOlt7InN5c3RlbSI6Imh0dHBzOi8vZmhpci5uaHMudWsvSWQvb2RzLW9yZ2FuaXphdGlvbi1jb2RlIiwidmFsdWUiOiJNODUwMTUifV0sIm5hbWUiOiJTcGFya2hpbGwgU3VyZ2VyeSIsImFkZHJlc3MiOlt7ImxpbmUiOlsiNTc4IFN0cmF0Zm9yZCBSb2FkIiwiU3BhcmtoaWxsIl0sImNpdHkiOiJCaXJtaW5naGFtIiwiZGlzdHJpY3QiOiJXZXN0IE1pZGxhbmRzIiwicG9zdGFsQ29kZSI6IkIxMSA0QU4ifV0sInRlbGVjb20iOlt7InN5c3RlbSI6InBob25lIiwidXNlIjoid29yayIsInZhbHVlIjoiMDM0NSAyNDUwNzY1In1dLCJhY3RpdmUiOnRydWUsInR5cGUiOlt7ImNvZGluZyI6W3sic3lzdGVtIjoiaHR0cHM6Ly9maGlyLm5ocy51ay9TVFUzL0NvZGVTeXN0ZW0vR1BDb25uZWN0LU9yZ2FuaXNhdGlvblR5cGUtMSIsImNvZGUiOiJncC1wcmFjdGljZSIsImRpc3BsYXkiOiJncC1wcmFjdGljZSJ9XX1dLCJleHRlbnNpb24iOlt7InVybCI6Imh0dHBzOi8vZmhpci5uaHMudWsvU1RVMy9TdHJ1Y3R1cmVEZWZpbml0aW9uL0V4dGVuc2lvbi1DYXJlQ29ubmVjdC1HUEMtTWFpbkxvY2F0aW9uLTEiLCJ2YWx1ZVJlZmVyZW5jZSI6eyJyZWZlcmVuY2UiOiJMb2NhdGlvbi8zNGQwMDAwMDAwMDAwMDAwXzAxMDAwMDAwMDAwMDAwMDAifX1dfSwicmVxdWVzdGluZ19wcmFjdGl0aW9uZXIiOnsicmVzb3VyY2VUeXBlIjoiUHJhY3RpdGlvbmVyIiwiaWQiOiIxNzI4MTAwMDAwMDAwMDAwIiwibWV0YSI6eyJwcm9maWxlIjpbImh0dHBzOi8vZmhpci5uaHMudWsvU1RVMy9TdHJ1Y3R1cmVEZWZpbml0aW9uL0NhcmVDb25uZWN0LUdQQy1QcmFjdGl0aW9uZXItMSJdfSwiaWRlbnRpZmllciI6W3sic3lzdGVtIjoiaHR0cHM6Ly9maGlyLm5ocy51ay9JZC9zZHMtdXNlci1pZCIsInZhbHVlIjoiMTQyMTQyMTQyMTQyIn1dLCJuYW1lIjpbeyJwcmVmaXgiOlsiTXIiXSwiZ2l2ZW4iOlsiQm9iIl0sImZhbWlseSI6IldpbHNvbiIsInVzZSI6Im9mZmljaWFsIn1dLCJnZW5kZXIiOiJtYWxlIiwiYWN0aXZlIjp0cnVlLCJleHRlbnNpb24iOlt7InVybCI6Imh0dHBzOi8vZmhpci5uaHMudWsvU1RVMy9TdHJ1Y3R1cmVEZWZpbml0aW9uL0V4dGVuc2lvbi1DYXJlQ29ubmVjdC1HUEMtTkhTQ29tbXVuaWNhdGlvbi0xIiwiZXh0ZW5zaW9uIjpbeyJ1cmwiOiJsYW5ndWFnZSIsInZhbHVlQ29kZWFibGVDb25jZXB0Ijp7ImNvZGluZyI6W3sic3lzdGVtIjoiaHR0cHM6Ly9maGlyLm5ocy51ay9TVFUzL0NvZGVTeXN0ZW0vQ2FyZUNvbm5lY3QtSHVtYW5MYW5ndWFnZS0xIiwiY29kZSI6ImFzIiwiZGlzcGxheSI6IkFzc2FtZXNlIn1dfX1dfSx7InVybCI6Imh0dHBzOi8vZmhpci5uaHMudWsvU1RVMy9TdHJ1Y3R1cmVEZWZpbml0aW9uL0V4dGVuc2lvbi1DYXJlQ29ubmVjdC1HUEMtTkhTQ29tbXVuaWNhdGlvbi0xIiwiZXh0ZW5zaW9uIjpbeyJ1cmwiOiJsYW5ndWFnZSIsInZhbHVlQ29kZWFibGVDb25jZXB0Ijp7ImNvZGluZyI6W3sic3lzdGVtIjoiaHR0cHM6Ly9maGlyLm5ocy51ay9TVFUzL0NvZGVTeXN0ZW0vQ2FyZUNvbm5lY3QtSHVtYW5MYW5ndWFnZS0xIiwiY29kZSI6ImJoIiwiZGlzcGxheSI6IkJpaGFyaSBsYW5ndWFnZXMifV19fV19XX19.
+content-type: application/json+fhir
+accept-encoding: gzip
+accept: application/json+fhir
+ssp-from: A84018
+ssp-interactionid: urn:nhs:names:services:gpconnect:fhir:rest:search:patient_appointments-1
+ssp-to: 123456
+ssp-traceid: 34EA8DB0-1A7A-11E9-9F18-E3EE4D622E62
+
+----------
+Payload:
+----------
+[No payload for the Get request]
+
+
+----------
+Response:
+----------
+
+{
+	"resourceType":"Bundle",
+	"id":"DEA892C0-1B1A-11E9-B637-5B3F04472C9A",
+	"meta":
+	{
+		"profile":
+		[
+			"https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-Searchset-Bundle-1"
+		]
+	},
+	"type":"searchset",
+	"entry":
+	[
+		{
+			"fullUrl":"Appointment/aebebd1000000000",
+			"resource":
+			{
+				"resourceType":"Appointment",
+				"id":"aebebd1000000000",
+				"meta":
+				{
+					"profile":
+					[
+						"https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-Appointment-1"
+					],
+					"versionId":"F5B58C75431BBEBA307ACC08F78537EC",
+					"lastUpdated":"2019-01-18T12:11:11Z"
+				},
+				"contained":
+				[
+					{
+						"resourceType":"Organization",
+						"id":"bd00000000000000",
+						"meta":
+						{
+							"profile":
+							[
+								"https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1"
+							]
+						},
+						"identifier":
+						[
+							{
+								"system":"https://fhir.nhs.uk/Id/ods-organization-code",
+								"value":"Z12345"
+							}
+						],
+						"name":"Broad Walk Medical Practice",
+						"address":
+						[
+							{
+								"line":
+								[
+									"1 Oakworth Road"
+								],
+								"city":"Keighley",
+								"district":"West Yorkshire",
+								"postalCode":"BD21 1SA"
+							}
+						],
+						"telecom":
+						[
+							{
+								"system":"phone",
+								"use":"work",
+								"value":"0113 2050080"
+							}
+						],
+						"active":true,
+						"type":
+						[
+							{
+								"coding":
+								[
+									{
+										"system":"https://fhir.nhs.uk/STU3/CodeSystem/GPConnect-OrganisationType-1",
+										"code":"gp-practice",
+										"display":"gp-practice"
+									}
+								]
+							}
+						],
+						"extension":
+						[
+							{
+								"url":"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MainLocation-1",
+								"valueReference":
+								{
+									"reference":"Location/bd00000000000000_0100000000000000"
+								}
+							}
+						]
+					}
+				],
+				"description":"Test Appointment\n - Booked via GP Connect.",
+				"status":"booked",
+				"created":"2019-01-18T12:11:11Z",
+				"participant":
+				[
+					{
+						"actor":
+						{
+							"reference":"Patient/9222500000000000"
+						},
+						"status":"accepted"
+					},
+					{
+						"actor":
+						{
+							"reference":"Practitioner/d681700000000000",
+							"display":"Mr Mark Keith"
+						},
+						"status":"accepted"
+					},
+					{
+						"actor":
+						{
+							"reference":"Location/bd00000000000000_0100000000000000",
+							"display":"Broad Walk Medical Practice"
+						},
+						"status":"accepted"
+					}
+				],
+				"slot":
+				[
+					{
+						"reference":"Slot/1547816400000_f5f5330000000000"
+					}
+				],
+				"start":"2019-01-18T13:00:00Z",
+				"end":"2019-01-18T13:10:00Z",
+				"minutesDuration":10,
+				"extension":
+				[
+					{
+						"url":"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-GPConnect-BookingOrganisation-1",
+						"valueReference":
+						{
+							"reference":"#bd00000000000000"
+						}
+					},
+					{
+						"url":"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-GPConnect-DeliveryChannel-2",
+						"valueCode":"In-person"
+					},
+					{
+						"url":"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-GPConnect-PractitionerRole-1",
+						"valueCodeableConcept":
+						{
+							"coding":
+							[
+								{
+									"system":"https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
+									"code":"S0010:G0020:R0260",
+									"display":"General Medical Practitioner"
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	]
+}

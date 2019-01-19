@@ -1,0 +1,325 @@
+This is an http Put to https://systmoneukdemo1.tpp-uk.com/SystmOneMHS/NHSConnect/Z12345/STU3/1/Appointment/aebebd1000000000
+
+The id after /Appointment/ is the ID of the appointment you want to cancel. This is obtained from the response when it was booked, or from the message which gets the patient's existing appointments.
+
+---------
+Headers:
+----------
+authorization: Bearer eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJpc3MiOiJodHRwczovL3d3dy50cHAtdWsuY29tIiwic3ViIjoiMTcyODEwMDAwMDAwMDAwMCIsImF1ZCI6Imh0dHBzOi8vYXV0aG9yaXplLmZoaXIubmhzLm5ldC90b2tlbiIsImV4cCI6MTkwMDAwMDMwMCwiaWF0IjoxOTAwMDAwMDAwLCJyZWFzb25fZm9yX3JlcXVlc3QiOiJkaXJlY3RjYXJlIiwicmVxdWVzdGVkX3Njb3BlIjoicGF0aWVudC8qLndyaXRlIiwicmVxdWVzdGluZ19kZXZpY2UiOnsicmVzb3VyY2VUeXBlIjoiRGV2aWNlIiwiaWQiOiIxIiwibWV0YSI6eyJwcm9maWxlIjpbImh0dHA6Ly9maGlyLm5ocy5uZXQvU3RydWN0dXJlRGVmaW5pdGlvbi9ncGNvbm5lY3QtZGV2aWNlLTEiXSwidmVyc2lvbklkIjoiMSJ9LCJpZGVudGlmaWVyIjpbeyJzeXN0ZW0iOiJUUFAiLCJ2YWx1ZSI6IlRQUCJ9XSwidHlwZSI6eyJjb2RpbmciOlt7InN5c3RlbSI6Imh0dHA6Ly9zbm9tZWQuaW5mby9zY3QiLCJjb2RlIjoiNDYyMjQwMDAwIiwiZGlzcGxheSI6IlBhdGllbnQgaGVhbHRoIHJlY29yZCBpbmZvcm1hdGlvbiBzeXN0ZW0gKHBoeXNpY2FsIG9iamVjdCkifV19fSwicmVxdWVzdGluZ19vcmdhbml6YXRpb24iOnsicmVzb3VyY2VUeXBlIjoiT3JnYW5pemF0aW9uIiwiaWQiOiIzNGQwMDAwMDAwMDAwMDAwIiwibWV0YSI6eyJwcm9maWxlIjpbImh0dHBzOi8vZmhpci5uaHMudWsvU1RVMy9TdHJ1Y3R1cmVEZWZpbml0aW9uL0NhcmVDb25uZWN0LUdQQy1Pcmdhbml6YXRpb24tMSJdfSwiaWRlbnRpZmllciI6W3sic3lzdGVtIjoiaHR0cHM6Ly9maGlyLm5ocy51ay9JZC9vZHMtb3JnYW5pemF0aW9uLWNvZGUiLCJ2YWx1ZSI6Ik04NTAxNSJ9XSwibmFtZSI6IlNwYXJraGlsbCBTdXJnZXJ5IiwiYWRkcmVzcyI6W3sibGluZSI6WyI1NzggU3RyYXRmb3JkIFJvYWQiLCJTcGFya2hpbGwiXSwiY2l0eSI6IkJpcm1pbmdoYW0iLCJkaXN0cmljdCI6Ildlc3QgTWlkbGFuZHMiLCJwb3N0YWxDb2RlIjoiQjExIDRBTiJ9XSwidGVsZWNvbSI6W3sic3lzdGVtIjoicGhvbmUiLCJ1c2UiOiJ3b3JrIiwidmFsdWUiOiIwMzQ1IDI0NTA3NjUifV0sImFjdGl2ZSI6dHJ1ZSwidHlwZSI6W3siY29kaW5nIjpbeyJzeXN0ZW0iOiJodHRwczovL2ZoaXIubmhzLnVrL1NUVTMvQ29kZVN5c3RlbS9HUENvbm5lY3QtT3JnYW5pc2F0aW9uVHlwZS0xIiwiY29kZSI6ImdwLXByYWN0aWNlIiwiZGlzcGxheSI6ImdwLXByYWN0aWNlIn1dfV0sImV4dGVuc2lvbiI6W3sidXJsIjoiaHR0cHM6Ly9maGlyLm5ocy51ay9TVFUzL1N0cnVjdHVyZURlZmluaXRpb24vRXh0ZW5zaW9uLUNhcmVDb25uZWN0LUdQQy1NYWluTG9jYXRpb24tMSIsInZhbHVlUmVmZXJlbmNlIjp7InJlZmVyZW5jZSI6IkxvY2F0aW9uLzM0ZDAwMDAwMDAwMDAwMDBfMDEwMDAwMDAwMDAwMDAwMCJ9fV19LCJyZXF1ZXN0aW5nX3ByYWN0aXRpb25lciI6eyJyZXNvdXJjZVR5cGUiOiJQcmFjdGl0aW9uZXIiLCJpZCI6IjE3MjgxMDAwMDAwMDAwMDAiLCJtZXRhIjp7InByb2ZpbGUiOlsiaHR0cHM6Ly9maGlyLm5ocy51ay9TVFUzL1N0cnVjdHVyZURlZmluaXRpb24vQ2FyZUNvbm5lY3QtR1BDLVByYWN0aXRpb25lci0xIl19LCJpZGVudGlmaWVyIjpbeyJzeXN0ZW0iOiJodHRwczovL2ZoaXIubmhzLnVrL0lkL3Nkcy11c2VyLWlkIiwidmFsdWUiOiIxNDIxNDIxNDIxNDIifV0sIm5hbWUiOlt7InByZWZpeCI6WyJNciJdLCJnaXZlbiI6WyJCb2IiXSwiZmFtaWx5IjoiV2lsc29uIiwidXNlIjoib2ZmaWNpYWwifV0sImdlbmRlciI6Im1hbGUiLCJhY3RpdmUiOnRydWUsImV4dGVuc2lvbiI6W3sidXJsIjoiaHR0cHM6Ly9maGlyLm5ocy51ay9TVFUzL1N0cnVjdHVyZURlZmluaXRpb24vRXh0ZW5zaW9uLUNhcmVDb25uZWN0LUdQQy1OSFNDb21tdW5pY2F0aW9uLTEiLCJleHRlbnNpb24iOlt7InVybCI6Imxhbmd1YWdlIiwidmFsdWVDb2RlYWJsZUNvbmNlcHQiOnsiY29kaW5nIjpbeyJzeXN0ZW0iOiJodHRwczovL2ZoaXIubmhzLnVrL1NUVTMvQ29kZVN5c3RlbS9DYXJlQ29ubmVjdC1IdW1hbkxhbmd1YWdlLTEiLCJjb2RlIjoiYXMiLCJkaXNwbGF5IjoiQXNzYW1lc2UifV19fV19LHsidXJsIjoiaHR0cHM6Ly9maGlyLm5ocy51ay9TVFUzL1N0cnVjdHVyZURlZmluaXRpb24vRXh0ZW5zaW9uLUNhcmVDb25uZWN0LUdQQy1OSFNDb21tdW5pY2F0aW9uLTEiLCJleHRlbnNpb24iOlt7InVybCI6Imxhbmd1YWdlIiwidmFsdWVDb2RlYWJsZUNvbmNlcHQiOnsiY29kaW5nIjpbeyJzeXN0ZW0iOiJodHRwczovL2ZoaXIubmhzLnVrL1NUVTMvQ29kZVN5c3RlbS9DYXJlQ29ubmVjdC1IdW1hbkxhbmd1YWdlLTEiLCJjb2RlIjoiYmgiLCJkaXNwbGF5IjoiQmloYXJpIGxhbmd1YWdlcyJ9XX19XX1dfX0.
+content-type: application/json+fhir
+accept-encoding: gzip
+accept: application/json+fhir
+ssp-from: A84018
+ssp-interactionid: urn:nhs:names:services:gpconnect:fhir:rest:cancel:appointment-1
+ssp-to: 123456
+ssp-traceid: CAC38F90-18B2-11E9-947B-5133172CBFD8
+
+-----------
+Payload:
+-----------
+[this is the appointment you want to cancel, with the status set to "cancelled", and the addition of an 'AppointmentCancellationReason' extension]
+
+{
+	"resourceType":"Appointment",
+	"id":"aebebd1000000000",
+	"meta":
+	{
+		"profile":
+		[
+			"https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-Appointment-1"
+		],
+		"versionId":"F5B58C75431BBEBA307ACC08F78537EC",
+		"lastUpdated":"2019-01-18T12:11:11Z"
+	},
+	"contained":
+	[
+		{
+			"resourceType":"Organization",
+			"id":"bd00000000000000",
+			"meta":
+			{
+				"profile":
+				[
+					"https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1"
+				]
+			},
+			"identifier":
+			[
+				{
+					"system":"https://fhir.nhs.uk/Id/ods-organization-code",
+					"value":"Z12345"
+				}
+			],
+			"name":"Broad Walk Medical Practice",
+			"address":
+			[
+				{
+					"line":
+					[
+						"1 Oakworth Road"
+					],
+					"city":"Keighley",
+					"district":"West Yorkshire",
+					"postalCode":"BD21 1SA"
+				}
+			],
+			"telecom":
+			[
+				{
+					"system":"phone",
+					"use":"work",
+					"value":"0113 2050080"
+				}
+			],
+			"active":true,
+			"type":
+			[
+				{
+					"coding":
+					[
+						{
+							"system":"https://fhir.nhs.uk/STU3/CodeSystem/GPConnect-OrganisationType-1",
+							"code":"gp-practice",
+							"display":"gp-practice"
+						}
+					]
+				}
+			],
+			"extension":
+			[
+				{
+					"url":"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MainLocation-1",
+					"valueReference":
+					{
+						"reference":"Location/bd00000000000000_0100000000000000"
+					}
+				}
+			]
+		}
+	],
+	"description":"Test Appointment\n - Booked via GP Connect.",
+	"status":"cancelled",
+	"created":"2019-01-18T12:11:11Z",
+	"participant":
+	[
+		{
+			"actor":
+			{
+				"reference":"Patient/9222500000000000"
+			},
+			"status":"accepted"
+		},
+		{
+			"actor":
+			{
+				"reference":"Practitioner/d681700000000000",
+				"display":"Mr Mark Keith"
+			},
+			"status":"accepted"
+		},
+		{
+			"actor":
+			{
+				"reference":"Location/bd00000000000000_0100000000000000",
+				"display":"Broad Walk Medical Practice"
+			},
+			"status":"accepted"
+		}
+	],
+	"slot":
+	[
+		{
+			"reference":"Slot/1547816400000_f5f5330000000000"
+		}
+	],
+	"start":"2019-01-18T13:00:00Z",
+	"end":"2019-01-18T13:10:00Z",
+	"minutesDuration":10,
+	"extension":
+	[
+		{
+			"url":"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-GPConnect-AppointmentCancellationReason-1",
+			"valueString":"No longer required"
+		},
+		{
+			"url":"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-GPConnect-BookingOrganisation-1",
+			"valueReference":
+			{
+				"reference":"#bd00000000000000"
+			}
+		},
+		{
+			"url":"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-GPConnect-DeliveryChannel-2",
+			"valueCode":"In-person"
+		},
+		{
+			"url":"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-GPConnect-PractitionerRole-1",
+			"valueCodeableConcept":
+			{
+				"coding":
+				[
+					{
+						"system":"https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
+						"code":"S0010:G0020:R0260",
+						"display":"General Medical Practitioner"
+					}
+				]
+			}
+		}
+	]
+}
+
+
+-----------
+Response:
+-----------
+[If the message works, this echos back the cancelled appointment]
+{
+	"resourceType":"Appointment",
+	"id":"aebebd1000000000",
+	"meta":
+	{
+		"profile":
+		[
+			"https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-Appointment-1"
+		],
+		"versionId":"714D16960794B90B4F00AC536BC4DF9E",
+		"lastUpdated":"2019-01-18T12:28:15Z"
+	},
+	"contained":
+	[
+		{
+			"resourceType":"Organization",
+			"id":"bd00000000000000",
+			"meta":
+			{
+				"profile":
+				[
+					"https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1"
+				]
+			},
+			"identifier":
+			[
+				{
+					"system":"https://fhir.nhs.uk/Id/ods-organization-code",
+					"value":"Z12345"
+				}
+			],
+			"name":"Broad Walk Medical Practice",
+			"address":
+			[
+				{
+					"line":
+					[
+						"1 Oakworth Road"
+					],
+					"city":"Keighley",
+					"district":"West Yorkshire",
+					"postalCode":"BD21 1SA"
+				}
+			],
+			"telecom":
+			[
+				{
+					"system":"phone",
+					"use":"work",
+					"value":"0113 2050080"
+				}
+			],
+			"active":true,
+			"type":
+			[
+				{
+					"coding":
+					[
+						{
+							"system":"https://fhir.nhs.uk/STU3/CodeSystem/GPConnect-OrganisationType-1",
+							"code":"gp-practice",
+							"display":"gp-practice"
+						}
+					]
+				}
+			],
+			"extension":
+			[
+				{
+					"url":"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MainLocation-1",
+					"valueReference":
+					{
+						"reference":"Location/bd00000000000000_0100000000000000"
+					}
+				}
+			]
+		}
+	],
+	"description":"Cancellation reason: No longer required - \nTest Appointment\n - Booked via GP Connect.",
+	"status":"cancelled",
+	"created":"2019-01-18T12:11:11Z",
+	"participant":
+	[
+		{
+			"actor":
+			{
+				"reference":"Patient/9222500000000000"
+			},
+			"status":"accepted"
+		},
+		{
+			"actor":
+			{
+				"reference":"Practitioner/d681700000000000",
+				"display":"Mr Mark Keith"
+			},
+			"status":"accepted"
+		},
+		{
+			"actor":
+			{
+				"reference":"Location/bd00000000000000_0100000000000000",
+				"display":"Broad Walk Medical Practice"
+			},
+			"status":"accepted"
+		}
+	],
+	"slot":
+	[
+		{
+			"reference":"Slot/1547816400000_f5f5330000000000"
+		}
+	],
+	"start":"2019-01-18T13:00:00Z",
+	"end":"2019-01-18T13:10:00Z",
+	"minutesDuration":10,
+	"extension":
+	[
+		{
+			"url":"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-GPConnect-AppointmentCancellationReason-1",
+			"valueString":"No longer required"
+		},
+		{
+			"url":"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-GPConnect-BookingOrganisation-1",
+			"valueReference":
+			{
+				"reference":"#bd00000000000000"
+			}
+		},
+		{
+			"url":"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-GPConnect-DeliveryChannel-2",
+			"valueCode":"In-person"
+		},
+		{
+			"url":"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-GPConnect-PractitionerRole-1",
+			"valueCodeableConcept":
+			{
+				"coding":
+				[
+					{
+						"system":"https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
+						"code":"S0010:G0020:R0260",
+						"display":"General Medical Practitioner"
+					}
+				]
+			}
+		}
+	]
+}
