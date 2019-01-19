@@ -1,20 +1,14 @@
 import acquisition
-import json
-import time
 from flask import Flask, jsonify, request
+import logic
+from PIL import Image
+from io import BytesIO
+import base64
 
+model = logic.model_load()
 
 app = Flask(__name__)
-
-state = {
-    'john': {'balance': 3000, 'credit': 999, 'rewards': 1337},
-    'mary': {'balance': 200, 'credit': 700, 'rewards': 500},
-    'leonard': {'balance': 0, 'credit': 100, 'rewards': 1}
-}
-AUTH_THRESH = 60
-auth = time.time() - 60
-
-ip_alexa = '82.132.222.99'
+medications = ['ibuprofen', 'paracetamol']
 
 
 @app.route('/alexareq/', methods=['GET', 'POST'])
@@ -23,19 +17,16 @@ def alexareq():
 
     value = data['AlexaInput']
     # Open Pill Detector
-    if value == 'Alexa, open pill detector':
-        acquisition.camera.save_ss(acquisition.camera.init_camera(), '../Images')
+    if value:
 
+        logic.predict(logic.model_load(), )
+        im = Image.open(acquisition.camera.save_ss(acquisition.camera.init_camera()))
+        buffered = BytesIO()
+        im.save(buffered, format="JPEG")
+        b64_im = base64.b64encode(buffered.getvalue())
 
-@app.route('/alexares/', methods=['GET', 'POST'])
-def alexares():
-    data = request.get_json()
-    value = data['AlexaOutput']
-    # Get Yes or No from Alexa
-    if value == 'Yes':
-        return jsonify({'responseForAlexa': 'Yes'})
-    elif value == 'No':
-        return jsonify({'responseForAlexa': 'No'})
+        return jsonify({'alexaReq': str(int(logic.predict(model, b64_im) in medications))})
+
 
 
 if __name__ == "__main__":
