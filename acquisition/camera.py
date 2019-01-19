@@ -18,10 +18,9 @@ def snap_ss(webcam):
     return img
 
 def save_ss(webcam, path):
-    img = webcam.get_image()
-    pygame.image.save(img, path)
+
     print('Screenshot saved to ' + path )
-    return img
+    return  pygame.image.save(snap_ss(webcam), path)
 
 if __name__ == '__main__.py':
     path = sys.argv[1]
