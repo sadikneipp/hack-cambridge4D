@@ -3,6 +3,7 @@ import sys
 import os
 import time
 
+PREPATH = '/dataset/'
 path = sys.argv[1]
 now = str(int(time.time()))
 
@@ -13,6 +14,6 @@ except FileExistsError:
 webcam = camera.init_camera()
 i= 0
 while True:
-    camera.save_ss(webcam, path + '/' + now + '_'  + str(i) + '.jpg')
+    camera.save_ss(webcam, PREPATH + path + '/' + now + '_'  + str(i) + '.jpg')
     i += 1
 
