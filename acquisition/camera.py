@@ -4,6 +4,7 @@ import sys
 import os
 
 CAM_NO = 2
+os.system('v4l2-ctl -d 2 -c brightness=70')
 
 def init_camera():
     pygame.camera.init()
