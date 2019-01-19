@@ -3,12 +3,12 @@ import sys
 import os
 import time
 
-PREPATH = '/dataset/'
+PREPATH = 'dataset/'
 path = sys.argv[1]
 now = str(int(time.time()))
 
 try:
-    os.makedirs(str(path))
+    os.makedirs(PREPATH + str(path))
 except FileExistsError:
     print('appending to existing folder!')
 webcam = camera.init_camera()
