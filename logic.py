@@ -45,8 +45,11 @@ def preprocess_pil(img_pil):
     return img_tensor
     
 def predict(model_ft, img_pil_64):
+    print(img_pil_64)
     img_pil = Image.open(BytesIO(base64.b64decode(img_pil_64)))
     img_tensor = preprocess_pil(img_pil)
+    print(img_pil)
+    print(img_tensor)
     fc_out = model_ft(img_tensor)
     _, indices = torch.max(fc_out, 1)
     return classes[indices[0]] 
