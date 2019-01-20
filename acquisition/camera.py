@@ -4,9 +4,9 @@ import sys
 import os
 
 CAM_NO = 2
-os.system('v4l2-ctl -d 2 -c brightness=70')
 
 def init_camera():
+    os.system('v4l2-ctl -d 2 -c brightness=70')
     pygame.camera.init()
     cameras = pygame.camera.list_cameras()
     print( "Using camera %s ..." % cameras[CAM_NO])
@@ -14,14 +14,19 @@ def init_camera():
     webcam.start()
     return webcam
 
+def stop_camera(webcam):
+    webcam.stop()
+    print('webcam stopped')
+    return
+
 def snap_ss(webcam):
     img = webcam.get_image()
     return img
 
-def save_ss(webcam):
+def save_ss(webcam, path='image.jpg'):
 
     # print('Screenshot saved to ' + path )
-    return  pygame.image.save(snap_ss(webcam), "image.jpg")
+    return  pygame.image.save(snap_ss(webcam), path)
 
 if __name__ == '__main__.py':
     path = sys.argv[1]
