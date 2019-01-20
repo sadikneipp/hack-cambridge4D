@@ -34,7 +34,9 @@ def model_load():
     model_ft = models.resnet18(pretrained=True)
     num_ftrs = model_ft.fc.in_features
     model_ft.fc = nn.Linear(num_ftrs, 4)
-    model_ft.load_state_dict(torch.load(filepath))
+    
+    saved_state = torch.load(filepath, map_location=lambda storage, loc: storage)
+    model_ft.load_state_dict(saved_state)
     model_ft.eval()
     return model_ft
 
@@ -44,8 +46,8 @@ def preprocess_pil(img_pil):
     img_tensor = upsample(img_tensor)
     return img_tensor
     
-def predict(model_ft, img_pil_64):
-    img_pil = Image.open(BytesIO(base64.b64decode(img_pil_64)))
+def predict(model_ft):
+    img_pil = Image.open('image.jpg')
     img_tensor = preprocess_pil(img_pil)
     fc_out = model_ft(img_tensor)
     _, indices = torch.max(fc_out, 1)
