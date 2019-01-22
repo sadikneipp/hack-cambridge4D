@@ -5,6 +5,6 @@ It's an Alexa Skill integrated to some hardware (Cardboard box + Raspberry Pi + 
 
 The rpi branch should be cloned to the Raspberry and the cloud branch to the GCP instance.
 
-Picture of our not-so-sophisticated setup:
+Video demo in our not-so-sophisticated setup:
 
-![alt text](https://raw.githubusercontent.com/sadikneipp/pill-it-up/master/setup.png)
+https://www.youtube.com/watch?v=USzFifWB6tk
