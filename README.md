@@ -8,3 +8,6 @@ The rpi branch should be cloned to the Raspberry and the cloud branch to the GCP
 Video demo in our not-so-sophisticated setup:
 
 https://www.youtube.com/watch?v=USzFifWB6tk
+
+Devpost submission:
+https://devpost.com/software/isthismypoison
