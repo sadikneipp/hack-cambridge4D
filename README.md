@@ -1,5 +1,5 @@
 # pill-it-up
-This is the repo for pill_it_up, a submission for Cambridge Hack 4D!
+This is the repo for pill_it_up, a submission for Hack Cambridge 4D!
 
 It's an Alexa Skill integrated to some hardware (Cardboard box + Raspberry Pi + Webcam) and to a GCP instance capable of telling the user what pill has been put inside the box!
 
