@@ -3,7 +3,7 @@ import sys
 import os
 import time
 
-PREPATH = 'dataset/'
+PREPATH = 'dataset_arm/'
 path = sys.argv[1]
 n_pics = int(sys.argv[2])
 now = str(int(time.time()))
@@ -15,3 +15,5 @@ except FileExistsError:
 webcam = camera.init_camera()
 for i in range(n_pics):
     camera.save_ss(webcam, PREPATH + path + '/' + now + '_'  + str(i) + '.jpg')
+
+print(f'currently {len(os.listdir(PREPATH + path ))} files on path')
