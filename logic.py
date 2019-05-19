@@ -9,9 +9,8 @@ from importlib import import_module
 from acquisition import camera
 from io import BytesIO
 
-PATH = 'model/dumps' 
-file = os.listdir(PATH)[0]
-filepath = PATH + '/' + file
+MODEL_PATH = 'model/dumps/diretor_v1.model' 
+filepath = MODEL_PATH
 
 normalize = transforms.Normalize(
    mean=[0.485, 0.456, 0.406],

@@ -7,7 +7,7 @@ import time
 pygame.camera.init()
 
 cameras = pygame.camera.list_cameras()
-os.system('v4l2-ctl -d 2 -c brightness=70')
+os.system('v4l2-ctl -d 2 -c brightness=0')
 
 print ("Using camera %s ..." % cameras[2])
 

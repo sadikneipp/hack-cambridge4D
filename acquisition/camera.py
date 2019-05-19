@@ -6,7 +6,7 @@ import os
 CAM_NO = 2
 
 def init_camera():
-    os.system('v4l2-ctl -d 2 -c brightness=70')
+    os.system('v4l2-ctl -d 2 -c brightness=0')
     pygame.camera.init()
     cameras = pygame.camera.list_cameras()
     print( "Using camera %s ..." % cameras[CAM_NO])
